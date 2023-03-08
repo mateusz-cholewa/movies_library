@@ -20,4 +20,5 @@ class Series_Library(Movie_Library):
 
     def play(self, view = 1):
         self.views += view
-        
+
+print(fake.word().capitalize())
