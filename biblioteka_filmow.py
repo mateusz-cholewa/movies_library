@@ -61,8 +61,8 @@ class Library:
 library = Library()
 
 for _ in range(10):
-    library.add_title = Movie_Library(title=fake.word().capitalize(), year=fake.year(), type=fake.word().capitalize())
-    series = Series_Library(title=fake.word().capitalize(), year=fake.year(), type=fake.word().capitalize(), episode_number=fake.random_int(1,20), season_number=fake.random.randint(1,5))
+    library.add_title(Movie_Library(title=fake.word().capitalize(), year=fake.year(), type=fake.word().capitalize()))
+    library.add_title(Series_Library(title=fake.word().capitalize(), year=fake.year(), type=fake.word().capitalize(), episode_number=fake.random_int(1,20), season_number=fake.random.randint(1,5)))
     
 library.generate_views_n_times(5)
 
